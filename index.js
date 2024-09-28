@@ -54,7 +54,10 @@ app.post('/bfhl', (req, res) => {
     }
 });
 
-
+app.post('/sheet-edit', (req, res) => {
+  console.log('Sheet Edit Data:', req.body);
+  res.sendStatus(200);
+});
 app.get('/bfhl', (req, res) => {
     try {
         res.status(200).json({
